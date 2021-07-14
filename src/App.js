@@ -6,9 +6,8 @@ export default function App() {
   console.log("APP");
   const [text, setText] = useState("");
   const [open, setOpen] = useState(false);
-  onChangeText = (e) => setText(e.target.value);
-
-  onClickOpen = () => setOpen(!open);
+  const onChangeText = (e) => setText(e.target.value);
+  const onClickOpen = () => setOpen(!open);
   return (
     <div className="App">
       <input value={text} onChange={onChangeText} />
