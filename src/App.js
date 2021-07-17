@@ -8,7 +8,7 @@ export default function App() {
   const [open, setOpen] = useState(false);
   const onChangeText = (e) => setText(e.target.value);
   const onClickOpen = () => setOpen(!open);
-  const onClickClose = useCallback(() => setOpen(false), [open]);
+  const onClickClose = useCallback(() => setOpen(false), []);
   return (
     <div className="App">
       <input value={text} onChange={onChangeText} />
